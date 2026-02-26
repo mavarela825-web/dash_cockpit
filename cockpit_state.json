@@ -1,0 +1,9 @@
+{
+    "polarity": {
+        "HTF": "B",
+        "ITF": "B",
+        "STF": "N",
+        "Overnight": "BR"
+    },
+    "tick_value": 600
+}

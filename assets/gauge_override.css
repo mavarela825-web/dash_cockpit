@@ -1,0 +1,10 @@
+/* Force the arc to use the gradient stroke */
+#overall-content path {
+    stroke: url(#arcGradient) !important;
+}
+
+/* Prevent global CSS from overriding SVG colors */
+#overall-content svg * {
+    stroke: inherit !important;
+    fill: inherit !important;
+}
