@@ -1,10 +1,8 @@
+import dash
 from dash import html
 
-def layout_bias():
-    return html.Div(
-        [
-            html.H2("Bias", style={"color": "#ffffff"}),
-            html.Div("Bias page content goes here.", style={"color": "#ffffff"})
-        ],
-        style={"padding": "20px"}
-    )
+dash.register_page(__name__, path="/bias")
+
+layout = html.Div(
+    [html.H1("Bias Page", style={"color": "white"})]
+)

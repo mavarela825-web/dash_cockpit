@@ -1,10 +1,8 @@
+import dash
 from dash import html
 
-def layout_adline():
-    return html.Div(
-        [
-            html.H2("AD Line", style={"color": "#ffffff"}),
-            html.Div("AD Line page content goes here.", style={"color": "#ffffff"})
-        ],
-        style={"padding": "20px"}
-    )
+dash.register_page(__name__, path="/adline")
+
+layout = html.Div(
+    [html.H1("AD Line Page", style={"color": "white"})]
+)
